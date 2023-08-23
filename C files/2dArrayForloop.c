@@ -2,7 +2,10 @@
 
 int main(){
 
+   
     int numbers [3][3];
+    int rows = sizeof(numbers)/sizeof(numbers[0]);
+    int coloums = sizeof(numbers[0])/sizeof(numbers[0][0]);
 
     numbers [0][0] = 1;
     numbers [0][1] = 2;
@@ -14,9 +17,9 @@ int main(){
     numbers [2][1] = 8;
     numbers [2][2] = 9;
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j< 3; j++ ){
+        for (int j = 0; j< coloums; j++ ){
             printf("%d ", numbers[i][j]);
         }
         printf("\n");
