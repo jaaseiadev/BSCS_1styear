@@ -22,6 +22,9 @@ int main(){
 "Stay hopeful.",
 "You're capable."};
 
+//you cant change the value of the strings on an array so you have to use this
+
+strcpy(affirmations[0], "Ayaw pag shifttt");
 
     for(int i = 0; i < sizeof(affirmations)/sizeof(affirmations[0]); i++){
         printf("\n%s", affirmations[i]);
