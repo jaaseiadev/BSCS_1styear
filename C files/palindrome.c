@@ -1,24 +1,28 @@
-#include <stdint.h>
-
-int main(){
-
-    char word[] = {"oten"};
-
+// C implementation to check if a given 
+// string is palindrome or not
+#include <stdio.h>
+#include <string.h>
+  
+int main()
+{
+    char str[] = { "abbbar" };
+  
+    // Start from leftmost and 
+    // rightmost corners of str
     int left = 0;
-    //iz minus one becase manobra og dili minusan
-    int right = sizeof(word)/sizeof(word[0]) - 1 ;
-
-    //printf("%d", right);
-
-        //while loop nga ga compare sa left most sa array og sa rightmost
-        while(right > left){
-            if(word[left++] != word[right--]){
-                printf("%s is NOT a palindrome", word);
-                return 0;
-            }
+    int right = strlen(str) - 1;
+  
+    // Keep comparing characters
+    // while they are same
+    while (right > left) {
+        if (str[left++] != str[right--]) {
+            printf("%s is not a palindrome\n", str);
+            return 0;
+            // will return from here
         }
-        printf(" ITS A PALINDROME");
-
-
+    }
+  
+    printf("%s is a palindrome\n", str);
+  
     return 0;
 }
