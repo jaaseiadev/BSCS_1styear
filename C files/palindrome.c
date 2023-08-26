@@ -5,7 +5,7 @@
   
 int main()
 {
-    char str[] = { "abbbar" };
+    char str[] = { "1001" };
   
     // Start from leftmost and 
     // rightmost corners of str
