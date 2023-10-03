@@ -15,7 +15,7 @@ int main(){
                         for(i = 0; i < n; i++){
                     printf("\nElements in array are: ");
                     printf("%d", prices[i]);
-                }
+                }   
 
         for(int j = 0; n >= j; n--){
             printf("\nElements in array in reverse are: ");

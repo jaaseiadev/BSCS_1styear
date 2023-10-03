@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int rows = 5; // Number of rows in the pyramid
+    int rows = 3; // Number of rows in the pyramid
 
         for (int i = 1; i <= rows; i++) {
         
@@ -17,6 +17,8 @@ int main() {
         // Move to the next line
         printf("\n");
     }
+    
+        for (int i = 1; rows > i; rows--) {
 
     return 0;
 }
